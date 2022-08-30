@@ -11,7 +11,9 @@ import SwiftUI
 struct Dek_DHomeWorkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeView(title: "Dek-D แชร์เยอะ")
+            }
         }
     }
 }
