@@ -26,10 +26,15 @@ struct HomeView: View {
         .navigationTitle(Text(title))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems( trailing: trailNavigationBar())
+        .onAppear(perform: loadData)
     }
     
     func delete(at offsets: IndexSet) {
         viewModel.removeData(at: offsets)
+    }
+    
+    func loadData() {
+        viewModel.loadData()
     }
 }
 
@@ -38,10 +43,10 @@ struct HomeView: View {
 @ViewBuilder
 func trailNavigationBar() -> some View {
     HStack{
-        NavigationLink(destination: Text("Second View")) {
+        NavigationLink(destination: CreateListCardView()) {
             Image(systemName: "plus").foregroundColor(.primary)
         }
-        .navigationTitle("Navigation")
+        .navigationTitle("เพิ่มโพส์ต")
     }
 }
 
