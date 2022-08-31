@@ -9,7 +9,7 @@ import Foundation
 
 class HomeViewModel: ObservableObject {
     
-    @Published private(set) var MockData: [ListCard] = [] {
+    @Published private(set) var CardData: [ListCard] = [] {
         didSet{
             print("load/add Data success")
         }
@@ -20,12 +20,12 @@ class HomeViewModel: ObservableObject {
     }
     
     func removeData(at offsets: IndexSet){
-        Data.remove(atOffsets: offsets)
+        MockData.remove(atOffsets: offsets)
         loadData()
     }
     
     func loadData(){
-        self.MockData = Data
+        self.CardData = MockData
     }
     
 }

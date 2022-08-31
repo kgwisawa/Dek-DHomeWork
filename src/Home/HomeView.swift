@@ -15,7 +15,7 @@ struct HomeView: View {
     var body: some View {
         VStack{
             List {
-                ForEach(viewModel.MockData){value in
+                ForEach(viewModel.CardData){value in
                     NavigationLink(destination: DetailCardView(name: value.name, detail: value.detail)) {
                     CustomListView(item:value)
                     }

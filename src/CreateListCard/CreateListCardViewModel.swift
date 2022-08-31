@@ -40,7 +40,7 @@ class CreateListCardViewModel: ObservableObject {
     func addData() -> Bool {
         
         if isValidateName && isValidateDetail {
-            Data.append(ListCard(name: name, detail: detail))
+            MockData.append(ListCard(name: name, detail: detail))
             return true
         } else {
             isShowValidate = true

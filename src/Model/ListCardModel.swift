@@ -14,7 +14,10 @@ struct ListCard: Identifiable {
 }
 
 // MockData //
-var Data: [ListCard] = [
+var MockData: [ListCard] = [
     ListCard(name: "โพยเตรียมสอบ", detail: "อวยโพยเชิญทุ้นี้! ส่อง \"โพยเตรียมสอบ\" ในวิถีเซียน ละเอียดชนิดหมูบดยังยอมแพ้"),
     ListCard(name: "งาน #VMAs", detail: "มาดูกัน งาน #VMAs ปีนี้ P!nk สอนอะไรเรา"),
+    ListCard(name: "ซุปกิมจิที่ไหนอร่อย?", detail: "ซุปกิมจิที่ไหนอร่อย? ก็ซุปกิมจิทำกินเองไง!"),
+    ListCard(name: "เฟรชชี่ปี1", detail: "เปิดวาปเฟรชชี่ปี1"),
+    ListCard(name: "บุกกองซีรีส์คุณพ่อบรู๊ค", detail: "น้องณดาน่ารักมาก!! บุกกองซีรีส์คุณพ่อบรู๊ค")
 ]
