@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E11466528BF366C00BDBB54 /* DetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11466428BF366C00BDBB54 /* DetailCardView.swift */; };
+		3E11466728BF369600BDBB54 /* DetailCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E11466628BF369600BDBB54 /* DetailCardViewModel.swift */; };
 		3E1FC9CE28BDED35001DE06B /* Dek_DHomeWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FC9CD28BDED35001DE06B /* Dek_DHomeWorkApp.swift */; };
 		3E1FC9D028BDED35001DE06B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FC9CF28BDED35001DE06B /* HomeView.swift */; };
 		3E1FC9D228BDED36001DE06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FC9D128BDED36001DE06B /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E11466428BF366C00BDBB54 /* DetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardView.swift; sourceTree = "<group>"; };
+		3E11466628BF369600BDBB54 /* DetailCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardViewModel.swift; sourceTree = "<group>"; };
 		3E1FC9CA28BDED35001DE06B /* Dek-DHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dek-DHomeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1FC9CD28BDED35001DE06B /* Dek_DHomeWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dek_DHomeWorkApp.swift; sourceTree = "<group>"; };
 		3E1FC9CF28BDED35001DE06B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E11466828BF36A800BDBB54 /* DetailCard */ = {
+			isa = PBXGroup;
+			children = (
+				3E11466428BF366C00BDBB54 /* DetailCardView.swift */,
+				3E11466628BF369600BDBB54 /* DetailCardViewModel.swift */,
+			);
+			path = DetailCard;
+			sourceTree = "<group>";
+		};
 		3E1FC9C128BDED35001DE06B = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 				3E1FC9CD28BDED35001DE06B /* Dek_DHomeWorkApp.swift */,
 				3E54758A28BE4BB0007DA4CF /* Model */,
 				3E54758528BE17AB007DA4CF /* Home */,
+				3E11466828BF36A800BDBB54 /* DetailCard */,
 				3E54758F28BE505C007DA4CF /* CreateListCard */,
 				3E1FC9D128BDED36001DE06B /* Assets.xcassets */,
 				3E1FC9D328BDED36001DE06B /* Preview Content */,
@@ -176,7 +190,9 @@
 				3E1FC9D028BDED35001DE06B /* HomeView.swift in Sources */,
 				3E54758428BE17A4007DA4CF /* HomeViewModel.swift in Sources */,
 				3E54758E28BE5055007DA4CF /* CreateListCardViewModel.swift in Sources */,
+				3E11466528BF366C00BDBB54 /* DetailCardView.swift in Sources */,
 				3E1FC9CE28BDED35001DE06B /* Dek_DHomeWorkApp.swift in Sources */,
+				3E11466728BF369600BDBB54 /* DetailCardViewModel.swift in Sources */,
 				3E54758928BE4B92007DA4CF /* ListCardModel.swift in Sources */,
 				3E54758C28BE4CEB007DA4CF /* CreateListCardView.swift in Sources */,
 			);
@@ -306,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dek-DHomeWork/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"src/Preview Content\"";
 				DEVELOPMENT_TEAM = J59K4XDA39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dek-DHomeWork/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"src/Preview Content\"";
 				DEVELOPMENT_TEAM = J59K4XDA39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

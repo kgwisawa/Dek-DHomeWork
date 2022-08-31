@@ -16,7 +16,9 @@ struct HomeView: View {
         VStack{
             List {
                 ForEach(viewModel.MockData){value in
+                    NavigationLink(destination: DetailCardView(name: value.name, detail: value.detail)) {
                     CustomListView(item:value)
+                    }
                 }
                 .onDelete(perform: delete)
             }
@@ -46,7 +48,6 @@ func trailNavigationBar() -> some View {
         NavigationLink(destination: CreateListCardView()) {
             Image(systemName: "plus").foregroundColor(.primary)
         }
-        .navigationTitle("เพิ่มโพส์ต")
     }
 }
 
