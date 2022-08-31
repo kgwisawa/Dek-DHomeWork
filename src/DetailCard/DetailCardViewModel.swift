@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class DetailCardViewModel: ObservableObject {
+    
+    init(){
+        
+    }
+}

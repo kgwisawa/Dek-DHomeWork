@@ -11,6 +11,8 @@ struct DetailCardView: View {
     @State var name: String
     @State var detail: String
     
+    @StateObject var viewModel: DetailCardViewModel = DetailCardViewModel()
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading,spacing:10){
